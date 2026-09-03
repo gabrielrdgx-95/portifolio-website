@@ -1,7 +1,7 @@
 /* VARIABLE */
 :root {
-    --cor-principal: #0000ff;
-    --cor-fundo: #f5f5f5f5;
+    --cor-principal: #2a2a36;
+    --cor-fundo: #f5f5f5;
     --espacamento-padrao: 20px;
 }
 /*-------*/
@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #ffffff;
+    background-color: #213d66;
     font-family: Arial, sans-serif;
 }
 
@@ -30,7 +30,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background-color: var(--cor-fundo);
+    background-color: #9ab3f8;
+    border-radius: 20px;
+    box-shadow: 0 3px 4px 0 var(--cor-principal);
 }
 
 nav {
@@ -66,8 +68,9 @@ p {
 .link-menu {
     color: black;
     text-decoration: none;
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 2.5px solid black;
+    border-radius: 8px;
+    box-shadow: 0 3px 4px 0 var(--cor-principal);
     padding: 5px;
     transition: 0.3s;
     background-color: var(--cor-fundo);
@@ -81,12 +84,13 @@ p {
 .link-menu:focus {
     outline: 2px solid var(--cor-principal);
 }
-/*-------*/
+
 
 /* SECTIONS */
 #projetos, #habilidades, #apresentacao {
     padding: 20px;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     background-color: var(--cor-fundo);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -99,7 +103,6 @@ p {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
     transform: translateY(-5px);
 }
-/*-------*/
 
 /* PROJETOS */
 .card-panel {
@@ -117,7 +120,37 @@ p {
 .destaque {
     color: var(--cor-principal);
 }
-/*-------*/
+ .input-test{
+    border: 2.5px solid black;
+    border-radius: 6px;
+    box-shadow: 0 3px 4px 0 var(--cor-principal);
+ }
+
+.button-test {
+    border: 2.5px solid black;
+    border-radius: 8px;
+    box-shadow: 0 3px 4px 0 var(--cor-principal);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.button-test:hover {
+    font-weight: bolder;
+    background-color: #2a2a36;
+}
+
+footer {
+    color: var(--cor-principal);
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: var(--cor-fundo);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    box-shadow: 0 3px 4px 0 var(--cor-principal);
+}
 
 /* RESPONSIVIDADE */
 @media (max-width: 600px) {
