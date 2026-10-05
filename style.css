@@ -1,7 +1,7 @@
 /* VARIABLE Vermelho #FF5733, amarelo #FBC02D, azul #1976D2, preto #212121*/
 :root {
-    --cor-principal: #212121;
-    --cor-fundo: #FBC02D;
+    --cor-principal: white;
+    --cor-fundo: #3b9652;
     --espacamento-padrao: 20px;
 }
 
@@ -11,9 +11,9 @@
 * {
     box-sizing: border-box;
 }
+
 /* GERAR OPÇÕES DE CLIMA PARA O USÁRIO ESCOLHER*/
 body {
-    
     background-color: black;
 }
 
@@ -29,8 +29,6 @@ body {
     border: 2.5px solid black;
     border-radius: 8px;
 }
-
-/*-------*/
 
 /*HEADER'S*/
 header {
@@ -61,16 +59,14 @@ nav {
 }
 
 h1 {
-    color: var(--cor-principal);
+    color: black;
+    text-shadow: 2px 2px 4px var(--cor-principal);
     text-align: center;
-    background-color: var(--cor-fundo);
+    border: 1px solid #9ab3f8;
     border-radius: 5px;
     padding: 5px;
-    box-shadow: 1px 1px 1px 1px var(--cor-principal);
 
 }
-
-/*-------*/
 
 /* MAIN CONTENTS*/
 main {
@@ -80,20 +76,21 @@ main {
 }
 
 h2 {
-    color: #FF5733;
+    color: black;
+    text-align: center;
+    margin-top: 5px;
+    text-shadow: 1px 1px 2px var(--cor-principal);
 }
 
 p {
     color: grey;
 }
 
-/*-------*/
-
 /*NAVIGATION LINKS*/
 .link-menu {
     color: var(--cor-principal);
     text-decoration: none;
-    border: 2.5px solid black;
+    border: none;
     border-radius: 8px;
     box-shadow: 0 3px 4px 0 var(--cor-principal);
     padding: 5px;
@@ -102,7 +99,7 @@ p {
 }
 
 .link-menu:hover {
-    color: var(--cor-principal);
+    color: black;
     background-color: #af861e;
 }
 
@@ -157,13 +154,11 @@ p {
 .input-test {
     border: 2.5px solid black;
     border-radius: 6px;
-    box-shadow: 0 3px 4px 0 var(--cor-principal);
 }
 
 .button-test {
     border: 2.5px solid black;
     border-radius: 8px;
-    box-shadow: 0 3px 4px 0 var(--cor-principal);
     transition: 0.2s;
     cursor: pointer;
 }
@@ -182,16 +177,20 @@ footer {
     background-color: var(--cor-fundo);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-    box-shadow: 0 3px 4px 0 var(--cor-principal);
+}
+
+.final-text {
+    color: rgba(1, 1, 1, 0.5);
+    text-align: center;
+    text-decoration: underline;
 }
 
 #plants {
     position: absolute;
-    left: 0;
+    left: 75px;
     right: 0;
-    top: 1000px;
-    width: 100%;
+    top: 1450px;
+    width: 90%;
     height: 45%;
 }
 
@@ -217,5 +216,3 @@ footer {
         margin-right: 0;
     }
 }
-
-/*-------*/
