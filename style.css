@@ -1,7 +1,7 @@
 /* VARIABLE Vermelho #FF5733, amarelo #FBC02D, azul #1976D2, preto #212121*/
 :root {
-    --cor-principal: white;
-    --cor-fundo: #3b9652;
+    --cor-principal: #212121;
+    --cor-fundo: #daa625;
     --espacamento-padrao: 20px;
 }
 
@@ -13,7 +13,12 @@
 }
 
 body {
-    background-color: black;
+    background-image: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)),
+        url('./img/repertório/orange-brick-wall-textured-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #body {
@@ -25,8 +30,25 @@ body {
     min-height: 100vh;
     background-color: #1976D2;
     font-family: Arial, sans-serif;
-    border: 2.5px solid black;
+    border: none;
     border-radius: 8px;
+    background-color: #121212;
+    /* Cor de segurança caso a imagem demore a carregar */
+
+    /* Link para sua imagem de textura de tijolo com grafite */
+    background-image: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)),
+        url('./img/repertório/d8f41250-6c07-4ef5-862c-5a1aabfefa27.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Efeito Parallax clássico dos anos 90 */
+
+    color: #f0f0f0;
+    /* Texto claro para contrastar bem */
+    font-family: 'Arial Black', Impact, sans-serif;
+    /* Fontes pesadas estilo blocos */
 }
 
 /*HEADER'S*/
@@ -38,7 +60,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background-color: #9ab3f8;
+    background-color: var(--cor-fundo);
     border-radius: 20px;
     box-shadow: 0 3px 4px 0 var(--cor-principal);
 }
@@ -51,9 +73,9 @@ nav {
 
 h1 {
     color: black;
-    text-shadow: 2px 2px 4px var(--cor-principal);
+    text-shadow: 1px 1px 3px var(--cor-principal);
     text-align: center;
-    border: 1px solid #9ab3f8;
+    border: none;
     border-radius: 5px;
     padding: 5px;
 
@@ -71,11 +93,11 @@ h2 {
     color: black;
     text-align: center;
     margin-top: 5px;
-    text-shadow: 1px 1px 2px var(--cor-principal);
+    text-shadow: 1px 1px 1px var(--cor-principal);
 }
 
-p {
-    color: grey;
+.destaque {
+    color: var(--cor-principal);
 }
 
 /*NAVIGATION LINKS*/
@@ -87,12 +109,12 @@ p {
     box-shadow: 0 3px 4px 0 var(--cor-principal);
     padding: 5px;
     transition: 0.3s;
-    background-color: var(--cor-fundo);
+    background-color: #c44528;
 }
 
 .link-menu:hover {
     color: black;
-    background-color: #af861e;
+    background-color: #631907;
 }
 
 .link-menu:focus {
@@ -104,19 +126,13 @@ p {
 #projetos,
 #habilidades,
 #apresentacao {
-    width: 50vh;
     padding: 20px;
-    margin-right: 90vh;
     margin-top: 10px;
     margin-bottom: 30px;
     background-color: var(--cor-fundo);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
-}
-
-#projetos {
-    width: 135vh;
 }
 
 #projetos:hover,
@@ -136,7 +152,8 @@ p {
 .card-projeto {
     position: relative;
     padding: 40px;
-    background-color: lightgray;
+    background-color: #c44528;
+    border-radius: 10px;
 }
 
 .destaque {
