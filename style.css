@@ -12,7 +12,6 @@
     box-sizing: border-box;
 }
 
-/* GERAR OPÇÕES DE CLIMA PARA O USÁRIO ESCOLHER*/
 body {
     background-color: black;
 }
@@ -44,14 +43,6 @@ header {
     box-shadow: 0 3px 4px 0 var(--cor-principal);
 }
 
-#clouds {
-    position: absolute;
-    bottom: 65px;
-    width: 112.2%;
-    height: 100%;
-    margin-left: -60px;
-}
-
 nav {
     display: flex;
     gap: 20px;
@@ -67,6 +58,7 @@ h1 {
     padding: 5px;
 
 }
+
 
 /* MAIN CONTENTS*/
 main {
@@ -183,15 +175,6 @@ footer {
     color: rgba(1, 1, 1, 0.5);
     text-align: center;
     text-decoration: underline;
-}
-
-#plants {
-    position: absolute;
-    left: 75px;
-    right: 0;
-    top: 1450px;
-    width: 90%;
-    height: 45%;
 }
 
 /* RESPONSIVIDADE */
